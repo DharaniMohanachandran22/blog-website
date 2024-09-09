@@ -7,7 +7,6 @@ This is a movie review blog website that provides users with detailed movie revi
 - [Features](#features)
 - [Pages](#pages)
 - [How to Use](#how-to-use)
-- [File Structure](#file-structure)
 - [Technologies Used](#technologies-used)
 
 ## Project Overview
@@ -49,20 +48,17 @@ The blog website showcases movie reviews written by an author. It provides a sea
 2. **About Page (`about.html`)**:
    - Details the history, mission, and future goals of the website.
 
-3. **Contact Page (`contact.html`)**:
-   - Displays a dropdown with the website’s phone number and email.
-
-4. **Review Page (`review.html`)**:
+3. **Review Page (`review.html`)**:
    - Lists YouTube review videos, brief descriptions, and links to full blog pages.
 
-5. **Trailer Page (`trailer.html`)**:
+4. **Trailer Page (`trailer.html`)**:
    - Displays movie trailers with brief descriptions and links to full movie blogs.
 
-6. **Blog Pages (`frozonBlogPage.html`, `greedyPeopleBlogPage.html`, `oujiaBlogPage.html`, etc.)**:
+5. **Blog Pages (`frozonBlogPage.html`, `greedyPeopleBlogPage.html`, `oujiaBlogPage.html`, etc.)**:
    - Each page contains a detailed review of a movie, including the author's name, review date, reading time, the full review, and a trailer.
    - Includes a comment section for user feedback.
 
-7. **Oops Page (`oops.html`)**:
+6. **Oops Page (`oops.html`)**:
    - Appears when a search doesn't match any blog on the website. Contains a navigation link to the home page.
 
 ## How to Use
@@ -79,33 +75,12 @@ The blog website showcases movie reviews written by an author. It provides a sea
 4. **Submit Comments**:
    - On the individual movie blog pages, users can leave comments about the movie.
 
-## File Structure
 
-```
-/movieBlogWebsite
-│
-├── about.html
-├── aboutStyle.css
-├── baseBlogPageStyle.css
-├── frozonBlogPage.html
-├── frozonBlogPageStyle.css
-├── greedyPeopleBlogPage.html
-├── greedyPeopleBlogPageStyle.css
-├── index.html
-├── lionBlogPage.html
-├── lionBlogPageStyle.css
-├── oujiaBlogPage.html
-├── oujiaBlogPageStyle.css
-├── review.html
-├── reviewStyle.css
-├── trailer.html
-├── oops.html
-└── oopsStyle.css
-```
+
 
 ## Technologies Used
 
 - **HTML5**: Structure of the web pages.
 - **CSS3**: Styling of the web pages.
-- **JavaScript**: Search and filter functionality, dynamic dropdowns, and interactivity.
+- **JavaScript**: Search and filter functionality and interactivity.
 
