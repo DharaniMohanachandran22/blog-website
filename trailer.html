@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trailerstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="topnav">
+            <div class="simble">
+                <div class="icon">
+                    <i class="fa fa-ravelry" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <span>kin</span>
+                </div>
+            </div>
+            <div class="contentnav">
+                <div class="home">
+                 <a href="index.html" style="text-decoration: none; color: black;">Home</a>
+                </div>
+                <div class="about">
+                 <a href="about.html" style="text-decoration: none; color: black;">About</a>
+                </div>
+                <div class="contact">
+                    <span>contact</span>
+                    <div class="dropdown-content">
+                        <span><b>Call us:</b></span><br>
+                        <span>7339443127</span><br>
+                        <span><b>Email :</b> </span><br>
+                        <span>kinmoveblog@gmail.com</span>
+                    </div>
+                </div> 
+                <div class="review">
+                    <a href="review.html" style="text-decoration: none; color: black;">Review</a>
+                </div>
+                <div class="trailer">
+                    <a href="trailer.html" style="text-decoration: none; color: black;">Trailer</a>
+                </div>
+            </div>
+        </div> 
+        <div class="media" style="width:8em;height:5em">
+            <div class="facebook" >
+                <a href="https://www.facebook.com/TheMovieBlogOnline" style="text-decoration: none; color: black;">
+                <i class="fa fa-facebook" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/moviereviewsblog/" style="text-decoration: none; color: black;">
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/Themovieblog" style="text-decoration: none; color: black;">
+                <i class="fa fa-youtube" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://x.com/OdinsMovieBlog" style="text-decoration: none; color: black;">
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+        </div>
+        <form style="display:flex; align-items: center;" onsubmit="return searchBlog()">
+            <div class="searchbar">
+                <input class="navsearch" type="text" placeholder="Search.." name="search" id="searchInput">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="searchfilter">
+                <button class="navbutton" type="button" onclick="toggleCategoryFilter()">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                </button>
+                <div id="categoryFilter" style="display:none; position: absolute; margin-top: 10px;cursor: pointer;">
+                    <div class="category-option" onclick="navigateToCategory('comedy')">Comedy</div> 
+                    <div class="category-option" onclick="navigateToCategory('horror')">Horror</div>
+                    <div class="category-option" onclick="navigateToCategory('love')">Love</div> 
+                    <div class="category-option" onclick="navigateToCategory('fantasy')">Fantasy</div>
+                    <div class="category-option" onclick="navigateToCategory('animal')">Animal</div> 
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="main">
+            
+            <div class="trailercard">
+                <div class="video">
+                <video width="800" height="400" controls>
+                    <source src="trailervedio/Greedy People .mp4">
+                </video>
+                </div>
+                <div class="content">
+                    <h1>Greedy People Review: A Mixed Bag of Comedy and Mystery</h1>
+                    <div class="details">
+                        <div class="author" style="margin: 0.5em;">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <span>By Caillou Pettis </span>
+                        </div>
+                        <div class="date" style="margin: 0.5em;">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>August 25, 2024</span>
+                        </div>
+                        <div class="time" style="margin: 0.5em;">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            <span>21 min read</span>
+                        </div>
+                    </div>
+                    <p>Potsy Ponciroli‘s Greedy People is a comedy-mystery film that tries to balance the tricky act of blending humor with a murder investigation.</p>
+                </div>
+                <button class="readmore">
+                    <a href="greedtpeopleblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+                </button>
+            </div>
+            <div class="trailercard">
+                <div class="video">
+                <video width="800" height="400" controls>
+                    <source src="trailervedio/Ouija Castle - Trailer 2024.mp4">
+                </video>
+                </div>
+                <div class="content">
+                    <h1>Ouija Castle Review: A Gothic Horror that Fails to Haunt</h1>
+                    <div class="details">
+                        <div class="author" style="margin: 0.5em;">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <span>By Caillou Pettis </span>
+                        </div>
+                        <div class="date" style="margin: 0.5em;">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>August 24, 2024</span>
+                        </div>
+                        <div class="time" style="margin: 0.5em;">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            <span>21 min read</span>
+                        </div>
+                    </div>
+                    <p>Ouija Castle, directed by Louisa Warren and penned by Jasmine Ebony Thomas, arrives on the horror scene with a premise that tantalizes but ultimately falls short of its potential. </p>
+                </div>
+                <button class="readmore">
+                    <a href="oujiablogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+                </button>
+            </div>
+            <div class="trailercard">
+                <div class="video">
+                <video width="800" height="400" controls>
+                    <source src="trailervedio/Bade Miyan Chote Miyan-Official Hindi Trailer _ Akshay, Tiger, Prithviraj _ AAZ _In Cinemas 10th Apr.mp4">
+                </video>
+                </div>
+                <div class="content">
+                    <h1>The Bromantic Duo’s Return As Daredevils!</h1>
+                    <div class="details">
+                        <div class="author" style="margin: 0.5em;">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <span>By Subhadeep Kumar Ganguli </span>
+                        </div>
+                        <div class="date" style="margin: 0.5em;">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>April 18, 2024</span>
+                        </div>
+                        <div class="time" style="margin: 0.5em;">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            <span>21 min read</span>
+                        </div>
+                    </div>
+                    <p> This time it’s not Amitabh Bachchan and Govinda but the “action hero” duo of the “Khiladi” Akshay Kumar and the “Baaghi” Tiger Shroff! The daring duo of Akshay and Tiger refurbish the popular Bade Miyan as “Freddy” and Chote Miyan as “Rocky” to take on a mysterious masked scientist (Prithviraj Sukumaran) who intends to destroy India with his artificial intelligence-based hi-tech weapons. </p>
+                </div>
+                <button class="readmore">
+                    <a href="badeblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+                </button>
+            </div>
+            <div class="trailercard">
+                <div class="video">
+                <video width="800" height="400" controls>
+                    <source src="trailervedio/Frozen 2 _ Official Teaser Trailer.mp4">
+                </video>
+                </div>
+                <div class="content">
+                    <h1>The Best Cartoon Movies For Family Movie Night</h1>
+                    <div class="details">
+                        <div class="author" style="margin: 0.5em;">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <span>By Cricker </span>
+                        </div>
+                        <div class="date" style="margin: 0.5em;">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>August 19, 2020</span>
+                        </div>
+                        <div class="time" style="margin: 0.5em;">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            <span>13 min read</span>
+                        </div>
+                    </div>
+                    <p>Just like casino online usa gaming, the constant evolvement of technology has led to the improvement of the cartoon industry. Cartoons have come from the simplest of graphics to having some of the most intriguing and captivating graphics ever.</p>
+                </div>
+                <button class="readmore">
+                    <a href="frozonblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+                </button>
+            </div>
+            <div class="trailercard">
+                <div class="video">
+                <video width="800" height="400" controls>
+                    <source src="trailervedio/The Lion King Official Teaser Trailer.mp4">
+                </video>
+                </div>
+                <div class="content">
+                    <h1>Mufasa: The Lion King Trailer Debuts – A Prequel for the Beloved King</h1>
+                    <div class="details">
+                        <div class="author" style="margin: 0.5em;">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <span>By Emmanuel "E-Man" Noisette </span>
+                        </div>
+                        <div class="date" style="margin: 0.5em;">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>April 29, 2024</span>
+                        </div>
+                        <div class="time" style="margin: 0.5em;">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+                    <p> Get ready to journey back to the Pride Lands! Disney just dropped the first trailer for “Mufasa: The Lion King,” a prequel that will explore the origin story of the beloved king.
+
+                        Directed by Barry Jenkins of “Moonlight” fame, the movie will show us Mufasa’s childhood and his relationship with his brother, Taka (who eventually becomes the villainous Scar). Young Mufasa will be voiced by Aaron Pierre, while Kelvin Harrison Jr. takes on the role of Taka.
+                        
+                        .</p>
+                </div>
+                <button class="readmore">
+                    <a href="lionblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+                </button>
+            </div>
+       
+        </div>
+        <script>
+            const blogs = [
+        { title: "greedy people", link: "greedtpeopleblogpage.html", category: "comedy" },
+        { title: "ouija castle", link: "oujiablogpage.html", category: "horror" },
+        { title: "bade maiyan chote maiyan", link: "badeblogpage.html", category: "love" },
+        { title: "frozon", link: "frozonblogpage.html", category: "fantasy" },
+        { title: "the lion king", link: "lionblogpage.html", category: "animal" }
+    ];
+    
+            function searchBlog() {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                const foundBlog = blogs.find(blog => blog.title === searchInput);
+                
+                if (foundBlog) {
+                    window.location.href = foundBlog.link;
+                } else {
+                    window.location.href = 'oops.html';
+    
+                }
+                return false; 
+            }
+            function filterByCategory() {
+            const selectedCategory = document.getElementById('categorySelect').value;
+            const foundBlog = blogs.find(blog => blog.category === selectedCategory);
+        
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+    }
+    function toggleCategoryFilter() {
+        const filter = document.getElementById('categoryFilter');
+        filter.style.display = (filter.style.display === 'none' || filter.style.display === '') ? 'block' : 'none';
+    }
+    function navigateToCategory(category) {
+        const foundBlog = blogs.find(blog => blog.category === category);
+    
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+        document.getElementById('categoryFilter').style.display = 'none';
+    }
+    
+        </script>
+        
+</body>
+</html>

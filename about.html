@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="topnav">
+            <div class="simble">
+                <div class="icon">
+                    <i class="fa fa-ravelry" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <span>kin</span>
+                </div>
+            </div>
+            <div class="contentnav">
+                <div class="home">
+                    <a href="index.html" style="text-decoration: none; color: black;">Home</a>
+                   </div>
+                   <div class="about">
+                    <a href="about.html" style="text-decoration: none; color: black;">About</a>
+                   </div>
+                   <div class="contact">
+                    <span>contact</span>
+                    <div class="dropdown-content">
+                        <span><b>Call us:</b></span><br>
+                        <span>7339443127</span><br>
+                        <span><b>Email :</b> </span><br>
+                        <span>kinmoveblog@gmail.com</span>
+                    </div>
+                </div>
+                   <div class="review">
+                       <a href="review.html" style="text-decoration: none; color: black;">Review</a>
+                   </div>
+                   <div class="trailer">
+                       <a href="trailer.html" style="text-decoration: none; color: black;">Trailer</a>
+                   </div>
+            </div> 
+        </div>
+        <div class="media" style="width:8em;height:5em">
+            <div class="facebook" >
+                <a href="https://www.facebook.com/TheMovieBlogOnline" style="text-decoration: none; color: black;">
+                <i class="fa fa-facebook" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/moviereviewsblog/" style="text-decoration: none; color: black;">
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/Themovieblog" style="text-decoration: none; color: black;">
+                <i class="fa fa-youtube" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://x.com/OdinsMovieBlog" style="text-decoration: none; color: black;">
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+        </div>
+        <form style="display:flex; align-items: center;" onsubmit="return searchBlog()">
+            <div class="searchbar">
+                <input class="navsearch" type="text" placeholder="Search.." name="search" id="searchInput">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="searchfilter">
+                <button class="navbutton" type="button" onclick="toggleCategoryFilter()">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                </button>
+                <div id="categoryFilter" style="display:none; position: absolute; margin-top: 10px;cursor: pointer;">
+                    <div class="category-option" onclick="navigateToCategory('comedy')">Comedy</div>
+                    <div class="category-option" onclick="navigateToCategory('horror')">Horror</div> 
+                    <div class="category-option" onclick="navigateToCategory('love')">Love</div> 
+                    <div class="category-option" onclick="navigateToCategory('fantasy')">Fantasy</div> 
+                    <div class="category-option" onclick="navigateToCategory('animal')">Animal</div> 
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="aboutpage">
+            <div class="portdetails" style="text-align: center;">
+                <h style="font-size:3em;line-height: 3em;">THE KIN</h>
+                <p style="font-size: large;line-height: 0px;">The Incredible True Story of Our Quest for WordPress Glory</p>
+            </div>
+            <div class="aboutpagecontent">
+            <div class="adventure">
+                <h1 style="text-align: center;"><b>The Adventures of Themeisle</b></h1>
+                <p>T ’was the year 2012 and the seas of WordPress were awash with themes. Sometimes using these themes was like walking the plank and finding easy-to-use, high-quality theme was like a treasure hunt. With that in mind, a band of four friendly pirates marooned themselves on an island with the goal of making everything easier.<br><br>
+    
+                    After a month they had their new approach to WordPress themes: build one store with themes built for specific purposes without the feature burden that made learning WordPress a chore. They started with little money, few skills, and no knowledge but they were willing to learn.<br><br>
+                    
+                    And, for our hearty crew this marked the beginning of their adventure on the high-seas.</p>
+            </div>
+            <div class="mission">
+                <h1 style="text-align: center;"><b>Our Mission</b></h1>
+                <p>We make it easy for anyone in the world to launch and grow their online presence, through education, high-quality products, and reliable support.</p>
+            </div>
+            <div class="continue">
+                <h1 style="text-align: center;"><b>Continuing the adventure</b></h1>
+                <p>The spoils of Zerif allowed Themeisle to bring more crew on board and add WordCamps to their pirate’s code. In 2016 Themeisle docked at two of the biggest WordCamps in the world: WCEU and WCUS. For the first time, the crew from Romania, France, India, and St Lucia met to volunteer at a celebration o’ WordPress. This tradition gets bigger every year with a crew wide trip to India for WordCamp Pune, 2019.</p>
+            </div>
+            </div>
+    
+    
+
+        </div>
+        
+        <script>
+            const blogs = [
+        { title: "greedy people", link: "greedtpeopleblogpage.html", category: "comedy" },
+        { title: "ouija castle", link: "oujiablogpage.html", category: "horror" },
+        { title: "bade maiyan chote maiyan", link: "badeblogpage.html", category: "love" },
+        { title: "frozon", link: "frozonblogpage.html", category: "fantasy" },
+        { title: "the lion king", link: "lionblogpage.html", category: "animal" }
+    ];
+    
+            function searchBlog() {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                const foundBlog = blogs.find(blog => blog.title === searchInput);
+                
+                if (foundBlog) {
+                    window.location.href = foundBlog.link;
+                } else {
+                    window.location.href = 'oops.html';
+    
+                }
+                return false; 
+            }
+            function filterByCategory() {
+            const selectedCategory = document.getElementById('categorySelect').value;
+            const foundBlog = blogs.find(blog => blog.category === selectedCategory);
+        
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+    }
+    function toggleCategoryFilter() {
+        const filter = document.getElementById('categoryFilter');
+        filter.style.display = (filter.style.display === 'none' || filter.style.display === '') ? 'block' : 'none';
+    }
+    function navigateToCategory(category) {
+        const foundBlog = blogs.find(blog => blog.category === category);
+    
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+        document.getElementById('categoryFilter').style.display = 'none';
+    }
+    
+        </script>
+</body>
+</html>

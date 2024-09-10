@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frozonblogpagestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="topnav">
+            <div class="simble">
+                <div class="icon">
+                    <i class="fa fa-ravelry" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <span>kin</span>
+                </div>
+            </div>
+            <div class="contentnav">
+                <div class="home">
+                 <a href="index.html" style="text-decoration: none; color: black;">Home</a>
+                </div>
+                <div class="about">
+                 <a href="about.html" style="text-decoration: none; color: black;">About</a>
+                </div>
+                <div class="contact">
+                    <span>contact</span>
+                    <div class="dropdown-content">
+                        <span><b>Call us:</b></span><br>
+                        <span>7339443127</span><br>
+                        <span><b>Email :</b> </span><br>
+                        <span>kinmoveblog@gmail.com</span>
+                    </div>
+                </div> 
+                <div class="review">
+                    <a href="review.html" style="text-decoration: none; color: black;">Review</a>
+                </div>
+                <div class="trailer">
+                    <a href="trailer.html" style="text-decoration: none; color: black;">Trailer</a>
+                </div>
+            </div>
+        </div> 
+        <div class="media" style="width:8em;height:5em">
+            <div class="facebook" >
+                <a href="https://www.facebook.com/TheMovieBlogOnline" style="text-decoration: none; color: black;">
+                <i class="fa fa-facebook" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/moviereviewsblog/" style="text-decoration: none; color: black;">
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/Themovieblog" style="text-decoration: none; color: black;">
+                <i class="fa fa-youtube" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://x.com/OdinsMovieBlog" style="text-decoration: none; color: black;">
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+        </div>
+        <form style="display:flex; align-items: center;" onsubmit="return searchBlog()">
+            <div class="searchbar">
+                <input class="navsearch" type="text" placeholder="Search.." name="search" id="searchInput">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="searchfilter">
+                <button class="navbutton" type="button" onclick="toggleCategoryFilter()">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                </button>
+                <div id="categoryFilter" style="display:none; position: absolute; margin-top: 10px;cursor: pointer;">
+                    <div class="category-option" onclick="navigateToCategory('comedy')">Comedy</div> 
+                    <div class="category-option" onclick="navigateToCategory('horror')">Horror</div>
+                    <div class="category-option" onclick="navigateToCategory('love')">Love</div> 
+                    <div class="category-option" onclick="navigateToCategory('fantasy')">Fantasy</div> 
+                    <div class="category-option" onclick="navigateToCategory('animal')">Animal</div> 
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="parentblog" >
+            <div class="blog">
+                <div class="image" style="width: 40px;">
+                    <img src="https://m.media-amazon.com/images/M/MV5BN2VjYzIxN2ItN2E0MS00ODE4LThjMTgtMzE2OTM0ZmM4YjBmXkEyXkFqcGdeQXVyMTc0OTI3NjUy._V1_FMjpg_UX1000_.jpg" width="600px" margin-left:10em; >
+                </div>
+                <div class="content">
+                    <h1>The Bromantic Duo’s Return As Daredevils In BADE MIYAN CHOTE MIYAN!</h1>
+                    <div class="details">
+                        <div class="author" style="margin: 0.5em;">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                            <span>By Caillou Pettis </span>
+                            <div class="dropdown-author">
+                                <img src="https://secure.gravatar.com/avatar/f2aebd2bd9e840fcbfdab70e26e4e27b?s=96&d=mm&r=pg" width=200px>
+                                <p>Caillou Pettis is a professional film critic and journalist as well as the author 
+                                    of While You Sleep, The Inspiring World of Horror: The Movies That Influenced Generations,
+                                     and co-author of Out of Time: True Paranormal Encounters. He has been writing in the entertainment 
+                                     industry for over seven and a half years professionally. Throughout the years, he has written articles 
+                                     for publications including Gold Derby, Exclaim!, CBR, Awards Radar, Awards Watch, Flickering Myth, BRWC,
+                                      Starburst Magazine, Punch Drunk Critics, Mediaversity Reviews, Vinyl Chapters, Northern Transmissions, 
+                                      and Beats Per Minute.</p>
+                                      <div class="i">
+                                          <a href="https://www.linkedin.com/in/cailloupettis/" style="text-decoration: none;">
+                                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                            Linked In
+                                        </a>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="date" style="margin: 0.5em;">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>August 19, 2020</span>
+                        </div>
+                        <div class="time" style="margin: 0.5em;">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            <span>13 min read</span>
+                        </div>
+                    </div>
+                    <p class="para">Witness the resurgence of the “Big Master” and “Little Master”. This time it’s not Amitabh 
+                        Bachchan and Govinda but the “action hero” duo of the “Khiladi” Akshay Kumar and the “Baaghi” Tiger Shroff! 
+                        The daring duo of Akshay and Tiger refurbish the popular Bade Miyan as “Freddy” and Chote Miyan as “Rocky” to 
+                        take on a mysterious masked scientist (Prithviraj Sukumaran) who intends to destroy India with his artificial
+                        intelligence-based hi-tech weapons. Will Freddy and Rocky be successful in foiling his evil plan? Wait and watch!</p>
+                     <p class="para">Set in the land of Arendelle, the story follows two princess sisters from early (adorable) childhood: Elsa and Anna. 
+                        Elsa (voiced by Idina Menzel) has the power to magically create snow and ice, but after a 
+                        near-tragic encounter involving her sister Anna (played by Kristen Bell), she is boarded up in
+                         the castle and no longer uses her powers. Anna is saved, but has no memory of the incident.</p>  
+                    <p class="para">The girls' parents decide the only thing to do is separate the girls. They live their lives in literal 
+                        and figurative isolation, each one yearning to be close to her sister. Years glide by in a montage that's accompanied 
+                        by the touching song "Do You Want to Build a Snowman?" and the princesses grow into young women. Anna longs
+                         to be close to her sister, but to protect Anna, Elsa hides her power..</p> 
+                    <p class="para">But, it wouldn't be much of a story if the powers never came out, and they invariably do. The kingdom arranges Elsa's 
+                        coronation (after the tragic death of their parents), and Anna is excited that she will be reunited
+                         with her sister, but her hopes for a warm reunion are dashed when Elsa shies away. Still, Anna is out of captivity
+                          and full of life, and open to all possibilities, including true love in the form of Hans (Santino Fontana), who immediately captures 
+                          her heart.</p>
+    
+                     </div>
+                     <h3>The Trailer</h3>
+                     <div class="video">
+                        <video width="800" height="400" controls>
+                            <source src="trailervedio/Bade Miyan Chote Miyan-Official Hindi Trailer _ Akshay, Tiger, Prithviraj _ AAZ _In Cinemas 10th Apr.mp4">
+                        </video>
+                        </div>
+                        <div class="comment-section">
+                            <h style="text-align: center;line-height: 3em;">Leave a Comment</h><br>
+                            <textarea id="commentInput" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+                            <button onclick="submitComment()">Submit</button>
+                            <div id="commentsList">
+                                <!-- Comments will be displayed here -->
+                            </div>
+                        </div>   
+            </div>
+    
+            </div>
+            
+        <script>
+            const blogs = [
+        { title: "greedy people", link: "greedtpeopleblogpage.html", category: "comedy" },
+        { title: "ouija castle", link: "oujiablogpage.html", category: "horror" },
+        { title: "bade maiyan chote maiyan", link: "badeblogpage.html", category: "love" },
+        { title: "frozon", link: "frozonblogpage.html", category: "fantasy" },
+        { title: "the lion king", link: "lionblogpage.html", category: "animal" }
+    ];
+    
+            function searchBlog() {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                const foundBlog = blogs.find(blog => blog.title === searchInput);
+                
+                if (foundBlog) {
+                    window.location.href = foundBlog.link;
+                } else {
+                    window.location.href = 'oops.html';
+    
+                }
+                return false; 
+            }
+            function filterByCategory() {
+            const selectedCategory = document.getElementById('categorySelect').value;
+            const foundBlog = blogs.find(blog => blog.category === selectedCategory);
+        
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+    }
+    function toggleCategoryFilter() {
+        const filter = document.getElementById('categoryFilter');
+        filter.style.display = (filter.style.display === 'none' || filter.style.display === '') ? 'block' : 'none';
+    }
+    function navigateToCategory(category) {
+        const foundBlog = blogs.find(blog => blog.category === category);
+    
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+        document.getElementById('categoryFilter').style.display = 'none';
+    }
+    function submitComment() {
+    const commentInput = document.getElementById('commentInput');
+    const commentsList = document.getElementById('commentsList');
+
+    const commentText = commentInput.value.trim();
+
+    
+    if (commentText) {
+        const commentDiv = document.createElement('div');
+        commentDiv.className = 'comment';
+        commentDiv.textContent = commentText;
+
+        commentsList.appendChild(commentDiv);
+
+        commentInput.value = '';
+    } else {
+        alert('Please enter a comment before submitting.');
+    }
+}
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="greedypeopleblogpagestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="topnav">
+            <div class="simble">
+                <div class="icon">
+                    <i class="fa fa-ravelry" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <span>kin</span>
+                </div>
+            </div>
+            <div class="contentnav">
+                <div class="home">
+                 <a href="index.html" style="text-decoration: none; color: black;">Home</a>
+                </div>
+                <div class="about">
+                 <a href="about.html" style="text-decoration: none; color: black;">About</a>
+                </div>
+                <div class="contact">
+                    <span>contact</span>
+                    <div class="dropdown-content">
+                        <span><b>Call us:</b></span><br>
+                        <span>7339443127</span><br>
+                        <span><b>Email :</b> </span><br>
+                        <span>kinmoveblog@gmail.com</span>
+                    </div>
+                </div> 
+                <div class="review">
+                    <a href="review.html" style="text-decoration: none; color: black;">Review</a>
+                </div>
+                <div class="trailer">
+                    <a href="trailer.html" style="text-decoration: none; color: black;">Trailer</a>
+                </div>
+            </div>
+        </div> 
+        <div class="media" style="width:8em;height:5em">
+            <div class="facebook" >
+                <a href="https://www.facebook.com/TheMovieBlogOnline" style="text-decoration: none; color: black;">
+                <i class="fa fa-facebook" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/moviereviewsblog/" style="text-decoration: none; color: black;">
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="youtube">
+                <a href="https://www.youtube.com/Themovieblog" style="text-decoration: none; color: black;">
+                <i class="fa fa-youtube" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://x.com/OdinsMovieBlog" style="text-decoration: none; color: black;">
+                <i class="fa fa-twitter" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+                </a>
+            </div>
+        </div>
+        <form style="display:flex; align-items: center;" onsubmit="return searchBlog()"></form>
+            <div class="searchbar">
+                <input class="navsearch" type="text" placeholder="Search.." name="search" id="searchInput">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="searchfilter">
+                <button class="navbutton" type="button" onclick="toggleCategoryFilter()">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                </button>
+                <div id="categoryFilter" style="display:none; position: absolute; margin-top: 10px;cursor: pointer;">
+                    <div class="category-option" onclick="navigateToCategory('comedy')">Comedy</div>
+                    <div class="category-option" onclick="navigateToCategory('horror')">Horror</div> 
+                    <div class="category-option" onclick="navigateToCategory('love')">Love</div> 
+                    <div class="category-option" onclick="navigateToCategory('fantasy')">Fantasy</div> 
+                    <div class="category-option" onclick="navigateToCategory('animal')">Animal</div>
+                </div>
+            </div>
+        </form>
+        </div>
+        <div class="parentblog" >
+        <div class="blog">
+            <div class="image">
+                <img src="https://zoechip.top/img/aHR0cHM6Ly90bWRiLWltYWdlLXByb2QuYi1jZG4ubmV0L3QvcC93MzAwL3ZrMHhYNnBJa3VjZ2E1dE1YYzFaUWFRVzFuYS5qcGc.jpg" >
+            </div>
+            <div class="content">
+                <h1>Greedy People Review: A Mixed Bag of Comedy and Mystery</h1>
+                <div class="details">
+                    <div class="author" style="margin: 0.5em;">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <span>By Caillou Pettis </span>
+                        <div class="dropdown-author">
+                            <img src="https://secure.gravatar.com/avatar/f2aebd2bd9e840fcbfdab70e26e4e27b?s=96&d=mm&r=pg" width=200px>
+                            <p>Caillou Pettis is a professional film critic and journalist as well as the author 
+                                of While You Sleep, The Inspiring World of Horror: The Movies That Influenced Generations,
+                                 and co-author of Out of Time: True Paranormal Encounters. He has been writing in the entertainment 
+                                 industry for over seven and a half years professionally. Throughout the years, he has written articles 
+                                 for publications including Gold Derby, Exclaim!, CBR, Awards Radar, Awards Watch, Flickering Myth, BRWC,
+                                  Starburst Magazine, Punch Drunk Critics, Mediaversity Reviews, Vinyl Chapters, Northern Transmissions, 
+                                  and Beats Per Minute.</p>
+                                  <div class="i">
+                                      <a href="https://www.linkedin.com/in/cailloupettis/" style="text-decoration: none;">
+                                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                        Linked In
+                                    </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="date" style="margin: 0.5em;">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>August 25, 2024</span>
+                    </div>
+                    <div class="time" style="margin: 0.5em;">
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+                        <span>21 min read</span>
+                    </div>
+                </div>
+                <p class="para">Potsy Ponciroli‘s Greedy People is a comedy-mystery film that tries to balance the tricky
+                 act of blending humor with a murder investigation. The film boasts an impressive ensemble cast, 
+                 including Himesh Patel, Lily James, Joseph Gordon-Levitt, and Tim Blake Nelson, among others. With such a lineup 
+                 and a promising premise, the film sets high expectations. However, while it delivers in some areas, it falls short in 
+                 others, resulting in an entertaining but uneven experience</p>
+                 <p class="para">The story is set in a quaint, isolated island town where everyone knows everyone, and secrets are hard to keep. Officer 
+                    Will Shelley (Himesh Patel) is the town’s mild-mannered cop who is more accustomed to handling minor disputes than serious
+                    crimes. His life takes a drastic turn when a murder is discovered, followed by the mysterious appearance of a large sum of
+                     money. The town is thrown into chaos, with suspicions and greed tearing apart the close-knit community.</p>  
+                <p class="para">Shelley is soon joined by Officer Terry Brogan (Joseph Gordon-Levitt), an overzealous cop from the mainland who sees
+                     this case as his ticket to the big leagues. Together, they form an odd-couple partnership, with Shelley’s laid-back 
+                     approach clashing with Brogan’s aggressive style. As they delve deeper into the investigation, they encounter a 
+                     colorful array of characters, each with their own motives and secrets.</p> 
+                <p class="para">Among the suspects are Paige (Lily James), a seemingly innocent waitress with a mysterious past;
+                     Wallace Chetlo (Tim Blake Nelson), a reclusive fisherman with a temper; and his wife, Virginia Chetlo (Traci Lords), 
+                     whose charm and cunning make her a formidable figure in the town. As the plot thickens, the line between friend and 
+                     foe blurs, leading to a series of twists and turns that keep the audience guessing until the end.</p>
+
+                 </div>
+                 <h3>The Trailer</h3>
+                 <div class="video">
+                    <video width="800" height="400" controls>
+                        <source src="trailervedio/Greedy People .mp4">
+                    </video>
+                    </div>
+                    <div class="comment-section">
+                        <h style="text-align: center;line-height: 3em;">Leave a Comment</h><br>
+                        <textarea id="commentInput" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+                        <button onclick="submitComment()">Submit</button>
+                        <div id="commentsList">
+                            <!-- Comments will be displayed here -->
+                        </div>
+                    </div>   
+        </div>
+
+        </div>
+        <script>
+            const blogs = [
+        { title: "greedy people", link: "greedtpeopleblogpage.html", category: "comedy" },
+        { title: "ouija castle", link: "oujiablogpage.html", category: "horror" },
+        { title: "bade maiyan chote maiyan", link: "badeblogpage.html", category: "love" },
+        { title: "frozon", link: "frozonblogpage.html", category: "fantasy" },
+        { title: "the lion king", link: "lionblogpage.html", category: "animal" }
+    ];
+    
+            function searchBlog() {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+                const foundBlog = blogs.find(blog => blog.title === searchInput);
+                
+                if (foundBlog) {
+                    window.location.href = foundBlog.link;
+                } else {
+                    window.location.href = 'oops.html';
+    
+                }
+                return false; 
+            }
+            function filterByCategory() {
+            const selectedCategory = document.getElementById('categorySelect').value;
+            const foundBlog = blogs.find(blog => blog.category === selectedCategory);
+        
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+    }
+    function toggleCategoryFilter() {
+        const filter = document.getElementById('categoryFilter');
+        filter.style.display = (filter.style.display === 'none' || filter.style.display === '') ? 'block' : 'none';
+    }
+    function navigateToCategory(category) {
+        const foundBlog = blogs.find(blog => blog.category === category);
+    
+        if (foundBlog) {
+            window.location.href = foundBlog.link;
+        } else {
+            alert("No blogs found under this category.");
+        }
+        document.getElementById('categoryFilter').style.display = 'none';
+    }
+    
+function submitComment() {
+    const commentInput = document.getElementById('commentInput');
+    const commentsList = document.getElementById('commentsList');
+
+    const commentText = commentInput.value.trim();
+
+    
+    if (commentText) {
+        const commentDiv = document.createElement('div');
+        commentDiv.className = 'comment';
+        commentDiv.textContent = commentText;
+
+        commentsList.appendChild(commentDiv);
+
+        commentInput.value = '';
+    } else {
+        alert('Please enter a comment before submitting.');
+    }
+}
+
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+    <div class="topnav">
+        <div class="simble">
+            <div class="icon">
+                <i class="fa fa-ravelry" aria-hidden="true"></i>
+            </div>
+            <div class="logo">
+                <span>kin</span>
+            </div>
+        </div>
+        <div class="contentnav">
+            <div class="home">
+             <a href="index.html" style="text-decoration: none; color: black;">Home</a>
+            </div>
+            <div class="about">
+             <a href="about.html" style="text-decoration: none; color: black;">About</a>
+            </div>
+            <div class="contact">
+                <span>contact</span>
+                <div class="dropdown-content">
+                    <span><b>Call us:</b></span><br>
+                    <span>7339443127</span><br>
+                    <span><b>Email :</b> </span><br>
+                    <span>kinmoveblog@gmail.com</span>
+                </div>
+            </div> 
+            <div class="review">
+                <a href="review.html" style="text-decoration: none; color: black;">Review</a>
+            </div>
+            <div class="trailer">
+                <a href="trailer.html" style="text-decoration: none; color: black;">Trailer</a>
+            </div>
+        </div>
+    </div> 
+    <div class="media" style="width:8em;height:5em">
+        <div class="facebook" >
+            <a href="https://www.facebook.com/TheMovieBlogOnline" style="text-decoration: none; color: black;">
+            <i class="fa fa-facebook" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+            </a>
+        </div>
+        <div class="insta">
+            <a href="https://www.instagram.com/moviereviewsblog/" style="text-decoration: none; color: black;">
+            <i class="fa fa-instagram" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+            </a>
+        </div>
+        <div class="youtube">
+            <a href="https://www.youtube.com/Themovieblog" style="text-decoration: none; color: black;">
+            <i class="fa fa-youtube" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+            </a>
+        </div>
+        <div class="twitter">
+            <a href="https://x.com/OdinsMovieBlog" style="text-decoration: none; color: black;">
+            <i class="fa fa-twitter" aria-hidden="true" style="font-size:1.3em;margin:0.5em"></i>
+            </a>
+        </div>
+    </div>
+    <form style="display:flex; align-items: center;" onsubmit="return searchBlog()">
+        <div class="searchbar">
+            <input class="navsearch" type="text" placeholder="Search.." name="search" id="searchInput">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="searchfilter" >
+            <button class="navbutton" type="button" onclick="toggleCategoryFilter()">
+                <i class="fa fa-filter" aria-hidden="true"></i>
+            </button>
+            <div id="categoryFilter" style="display:none; position: absolute; margin-top: 10px;cursor: pointer;">
+                <div class="category-option" onclick="navigateToCategory('Comedy')">Comedy</div> 
+                <div class="category-option" onclick="navigateToCategory('Horror')">Horror</div> 
+                <div class="category-option" onclick="navigateToCategory('Love')">Love</div> 
+                <div class="category-option" onclick="navigateToCategory('Fantasy')">Fantasy</div> 
+                <div class="category-option" onclick="navigateToCategory('Animal')">Animal</div> 
+            </div>
+        </div>
+    </form>
+    </div>
+    <div class="container">
+        <div class="blogcard">
+            <img src="https://m.media-amazon.com/images/M/MV5BMmFhYjQ0NmItZmQzNy00MTExLWFjZWUtN2ZkMDBlMjk2NWYzXkEyXkFqcGdeQXVyMTE5NTM5NTU5._V1_FMjpg_UX1000_.jpg" style="width:100%;height:60%">
+            <div class="details">
+               <h4 style="font-size: 2em;text-align: center;font-family: Georgia;">Greedy people</h4>
+               <button class="readmore">
+                <a href="greedtpeopleblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+            </button>
+            </div>
+        </div>
+        <div class="blogcard">
+            <img src="https://i.ytimg.com/vi/0DaPPYZXCPc/maxresdefault.jpg" style="width:100%;height: 60%;">
+            <div class="details">
+               <h4 style="font-size: 2em;text-align: center;font-family: Georgi;">Ouija castle</h4>
+               <button class="readmore">
+                <a href="oujiablogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+            </button>
+            </div>
+        </div>
+        <div class="blogcard">
+            <img src="https://st1.bollywoodlife.com/wp-content/uploads/2024/03/Untitled-design-2024-03-23T104800.801.png" style="width:100%;height: 60%;">
+            <div class="details">
+               <h4 style="font-size: 1.5em;text-align: center;font-family: Georgia;">Bade maiyan chote maiyan</h4>
+               <button class="readmore" >
+                <a href="badeblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+            </button>
+            </div>
+        </div>
+        <div class="blogcard">
+            <img src="https://st1.bollywoodlife.com/wp-content/uploads/2024/03/Untitled-design-2024-03-23T104800.801.png" style="width:100%;height: 60%;">
+            <div class="details">
+               <h4 style="font-size: 2em;text-align: center;font-family: Georgia;">Frozon</h4>
+               <button class="readmore" style="margin-bottom: 1.5em;">
+                <a href="frozonblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+            </button>
+            </div>
+        </div>
+        <div class="blogcard" style="margin-bottom: 5em;">
+            <img src="http://images.fanpop.com/images/image_uploads/The-Lion-King-the-lion-king-541187_1024_768.jpg" style="width:100%;height:60%">
+            <div class="details">
+               <h4 style="font-size: 2em;text-align: center;font-family: Georgia;">The Lion King</h4>
+               <button class="readmore">
+                <a href="lionblogpage.html" style="text-decoration: none; color: black;">Read more..</a>
+            </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        const blogs = [
+    { title: "greedy people", link: "greedtpeopleblogpage.html", category: "Comedy" ,image:"https://m.media-amazon.com/images/M/MV5BMmFhYjQ0NmItZmQzNy00MTExLWFjZWUtN2ZkMDBlMjk2NWYzXkEyXkFqcGdeQXVyMTE5NTM5NTU5._V1_FMjpg_UX1000_.jpg}"},
+    { title: "ouija castle", link: "oujiablogpage.html", category: "Horror" ,image:"https://i.ytimg.com/vi/0DaPPYZXCPc/maxresdefault.jpg" },
+    { title: "bade maiyan chote maiyan", link: "badeblogpage.html", category: "Love" ,image:"https://st1.bollywoodlife.com/wp-content/uploads/2024/03/Untitled-design-2024-03-23T104800.801.png" },
+    { title: "frozon", link: "frozonblogpage.html", category: "Fantasy" ,image:"https://st1.bollywoodlife.com/wp-content/uploads/2024/03/Untitled-design-2024-03-23T104800.801.png"},
+    { title: "the lion king", link: "lionblogpage.html", category: "Animal",image:"http://images.fanpop.com/images/image_uploads/The-Lion-King-the-lion-king-541187_1024_768.jpg" }
+];
+
+        function searchBlog() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const foundBlog = blogs.find(blog => blog.title === searchInput);
+            
+            if (foundBlog) {
+                window.location.href = foundBlog.link;
+            } else {
+                window.location.href = 'oops.html';
+
+            }
+            return false; 
+        }
+        function filterByCategory() {
+        const selectedCategory = document.getElementById('categorySelect').value;
+        const foundBlog = blogs.find(blog => blog.category === selectedCategory);
+    
+    if (foundBlog) {
+        window.location.href = foundBlog.link;
+    } else {
+        alert("No blogs found under this category.");
+    }
+}
+function toggleCategoryFilter() {
+    const filter = document.getElementById('categoryFilter');
+    filter.style.display = (filter.style.display === 'none' || filter.style.display === '') ? 'block' : 'none';
+}
+function navigateToCategory(category) {
+    let blogFound = false; 
+    const container = document.querySelector('.container');
+    container.innerHTML = '';
+
+    blogs.forEach(blog => {
+        if (blog.category === category) {
+            blogFound = true; 
+            container.innerHTML += `
+            <h1 style="text-align:center;font-size:2em;line-height:2em;width:100%; font-family: 'Work Sans', sans-serif;
+    font-size: 42px;">${blog.category}</h1>
+            <div class="blogcard" style="margin-bottom:5em;margin-top:1em">
+                <img src="${blog.image}" style="width:100%;height:60%">
+                <div class="details">
+                   <h4 style="font-size: 2em;text-align: center;font-family: Georgia;">${blog.title}</h4>
+                   <button class="readmore" style="margin-bottom:1em>
+                    <a href="${blog.link}" style="text-decoration: none; color: black;">Read more..</a>
+                </button>
+                </div>
+            </div>`;
+            container.style.flexDirection="row";
+        }
+    });
+
+
+    if (!blogFound) {
+        container.innerHTML = '<h3>No blogs found under this category.</h3>'; 
+    }
+
+    document.getElementById('categoryFilter').style.display = 'none';
+    document.getElementById('filterButton').style.display = 'none';  
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+x
+
+.navbar{
+    text-align: right;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#f1ea92 ;
+    height:5em ; 
+}
+.topnav{
+    display: flex;
+    float: left;
+     align-items: center; 
+}
+.contentnav{
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+}
+.media{
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+}
+.contentnav a:hover{
+    background-color: #ddd;
+    
+}
+.media a i:hover{
+    color: rgb(93, 122, 200);
+}
+.home{
+    margin-left: 13em;
+    font-size:larger;
+}
+.about{
+    margin-left:2em;
+    font-size:larger;
+}
+.contact{
+    margin-left:2em;
+    font-size:larger;
+    position: relative;
+    display: inline-block;
+}
+  
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    text-align: left;
+    font-family:serif;
+    line-height: 25px;;
+    font-size: 15px;
+  } 
+   
+.contact:hover .dropdown-content {
+    display: block;
+  }
+.review{
+    margin-left:2em;
+    font-size:larger;
+}
+.trailer{
+    margin-left:2em;
+    font-size:larger;
+}
+.icon{
+    font-size: 3em;
+    float: left;
+    margin-left:3em;
+    margin-bottom:0.1em;
+}
+.logo{
+    font-size: 1.3em;
+    font-weight: 100;
+    font-family: cursive;
+    margin-top: 2em;
+    float: left;
+}
+.navsearch{
+  width:20em;
+  height:2.6em;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+  margin-right:0.4em;
+  margin-left: 1.2em;
+}
+.searchbar {
+    position: relative;
+  }
+.fa-search {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    color: #8c8080;
+  }
+input::placeholder{
+    padding: 15px;
+    font-size: larger;
+}
+.searchfilter{
+    width:4em;
+    margin-right:4em ;
+    margin-left:1em;
+}
+.navbutton{
+    display:inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 36px;
+    width:30px;
+    margin-right:10em ;
+}
+.searchfilter i{
+    color: #ccc;
+    border-radius: 1em;
+    color:black ;
+}
+.navbutton i{
+    color: #ccc;
+    border-radius: 1em; 
+    color: black;
+}
+.category-option{
+    border:1px solid black;
+    width:5.3em;
+    height: 2em;
+    text-align: center;
+    background-color: white;
+    padding: 8px 0px 0px 0px;
+    cursor: inherit ;
+}
+.image {
+ margin-left: 20em;
+}
+ .parentblog{
+    width:100%;
+    height: 100%;
+}    
+.blog{
+    height: 80%;
+    width: 80%;
+    margin-left: 10em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 30px 30px 0px;
+ }
+ .content{
+    padding-left:10em;
+    /* padding-right:5em; */
+    width: 60em;
+ }
+h1{
+    color: #0080e8;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46px;
+    text-transform: none;
+    text-align: justify;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+}
+.para{
+    font-family: 'Lato', sans-serif;
+    line-height: 2em;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-left: 8.7em;
+}
+.video{
+    margin:2em 0em 0em 13em;
+}
+.comment-section {
+    margin-top: 2em;
+    margin-left: 13em;
+}
+
+textarea {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.comment-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+#commentsList {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.author{
+    position: relative;
+}
+.author:hover{
+    color: #0080e8;
+}
+.dropdown-author {
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: #f9f9f9;
+    min-width: 35em;
+    box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    text-align: left;
+    font-family:serif;
+    line-height: 25px;;
+    font-size: 15px;
+  } 
+   
+.author:hover .dropdown-author {
+    display: block;
+  }
+.i:hover{
+    color: rgb(93, 122, 200);
+    font-size:25px;
+    padding-bottom: 10px;
+}
